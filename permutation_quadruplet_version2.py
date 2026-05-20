@@ -42,6 +42,10 @@ def equilateral_envers(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
 def texte(chaine,dx,dy):
     
     return("<text x=\""+str(dx)+"\" y=\""+str(dy)+"\" font-size=\"2em\">"+chaine+"</text>")
+
+def texteInverse(chaine,dx,dy):
+    
+    return("<text x=\""+str(dx)+"\" y=\""+str(dy)+"\" font-size=\"2em\" text-anchor=\"middle\" transform=\"rotate(180 "+str(dx)+" "+str(dy)+")\">"+chaine+"</text>")
     
 
 # Je connaissais pas, c'est Chatgpt qui me l'a dit
@@ -66,12 +70,12 @@ if __name__=="__main__":
           image.write(equilateral(c=taille,color="\"green\"",dx=ax+i*epsilon,dy=ay/2))
           image.write("\n")
           image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.23+i*epsilon,dy=ay/2+taille*0.75))
-          #image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.23+i*epsilon,dy=ay/2+taille*0.75))
+          
          else :
           image.write("\n")
           image.write(equilateral_envers(c=taille,color="\"blue\"",dx=ax+taille/2+i*epsilon,dy=ay/2-taille/2+epsy))
           image.write("\n")
-          #image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.23,dy=ay+taille*0.75,transform=t))
+          image.write(texteInverse(les_permuts[6*j+i],dx=taille+ax-taille*0.00+i*epsilon,dy=ay/2-taille+taille*0.79))
          
          
     fin(image)
