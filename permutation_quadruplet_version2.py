@@ -73,7 +73,7 @@ if __name__=="__main__":
           
          else :
           image.write("\n")
-          image.write(equilateral_envers(c=taille,color="\"blue\"",dx=ax+taille/2+i*epsilon,dy=ay/2-taille/2+epsy))
+          image.write(equilateral_envers(c=taille,color="\"green\"",dx=ax+taille/2+i*epsilon,dy=ay/2-taille/2+epsy))
           image.write("\n")
           image.write(texteInverse(les_permuts[6*j+i],dx=taille+ax-taille*0.00+i*epsilon,dy=ay/2-taille+taille*0.79))
          
