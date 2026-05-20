@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+<polygon points="0 120 ,60.0 16.076951545867374 , 120 120" fill="none" stroke="green" transform=""/>
+
+<text x="27.6" y="90.0" font-size="2em">1234</text><polygon points="0 240 ,60.0 136.07695154586736 , 120 240" fill="none" stroke="green" transform=""/>
+
+<text x="27.6" y="210.0" font-size="2em">2134</text><polygon points="0 360 ,60.0 256.07695154586736 , 120 360" fill="none" stroke="green" transform=""/>
+
+<text x="27.6" y="330.0" font-size="2em">3124</text><polygon points="0 480 ,60.0 376.07695154586736 , 120 480" fill="none" stroke="green" transform=""/>
+
+<text x="27.6" y="450.0" font-size="2em">4123</text><polygon points="120 120 ,180.0 16.076951545867374 , 240 120" fill="none" stroke="green" transform=""/>
+
+<text x="147.6" y="90.0" font-size="2em">1243</text><polygon points="120 240 ,180.0 136.07695154586736 , 240 240" fill="none" stroke="green" transform=""/>
+
+<text x="147.6" y="210.0" font-size="2em">2143</text><polygon points="120 360 ,180.0 256.07695154586736 , 240 360" fill="none" stroke="green" transform=""/>
+
+<text x="147.6" y="330.0" font-size="2em">3142</text><polygon points="120 480 ,180.0 376.07695154586736 , 240 480" fill="none" stroke="green" transform=""/>
+
+<text x="147.6" y="450.0" font-size="2em">4132</text><polygon points="240 120 ,300.0 16.076951545867374 , 360 120" fill="none" stroke="green" transform=""/>
+
+<text x="267.6" y="90.0" font-size="2em">1324</text><polygon points="240 240 ,300.0 136.07695154586736 , 360 240" fill="none" stroke="green" transform=""/>
+
+<text x="267.6" y="210.0" font-size="2em">2314</text><polygon points="240 360 ,300.0 256.07695154586736 , 360 360" fill="none" stroke="green" transform=""/>
+
+<text x="267.6" y="330.0" font-size="2em">3214</text><polygon points="240 480 ,300.0 376.07695154586736 , 360 480" fill="none" stroke="green" transform=""/>
+
+<text x="267.6" y="450.0" font-size="2em">4213</text><polygon points="360 120 ,420.0 16.076951545867374 , 480 120" fill="none" stroke="green" transform=""/>
+
+<text x="387.6" y="90.0" font-size="2em">1342</text><polygon points="360 240 ,420.0 136.07695154586736 , 480 240" fill="none" stroke="green" transform=""/>
+
+<text x="387.6" y="210.0" font-size="2em">2341</text><polygon points="360 360 ,420.0 256.07695154586736 , 480 360" fill="none" stroke="green" transform=""/>
+
+<text x="387.6" y="330.0" font-size="2em">3241</text><polygon points="360 480 ,420.0 376.07695154586736 , 480 480" fill="none" stroke="green" transform=""/>
+
+<text x="387.6" y="450.0" font-size="2em">4231</text><polygon points="480 120 ,540.0 16.076951545867374 , 600 120" fill="none" stroke="green" transform=""/>
+
+<text x="507.6" y="90.0" font-size="2em">1423</text><polygon points="480 240 ,540.0 136.07695154586736 , 600 240" fill="none" stroke="green" transform=""/>
+
+<text x="507.6" y="210.0" font-size="2em">2413</text><polygon points="480 360 ,540.0 256.07695154586736 , 600 360" fill="none" stroke="green" transform=""/>
+
+<text x="507.6" y="330.0" font-size="2em">3412</text><polygon points="480 480 ,540.0 376.07695154586736 , 600 480" fill="none" stroke="green" transform=""/>
+
+<text x="507.6" y="450.0" font-size="2em">4312</text><polygon points="600 120 ,660.0 16.076951545867374 , 720 120" fill="none" stroke="green" transform=""/>
+
+<text x="627.6" y="90.0" font-size="2em">1432</text><polygon points="600 240 ,660.0 136.07695154586736 , 720 240" fill="none" stroke="green" transform=""/>
+
+<text x="627.6" y="210.0" font-size="2em">2431</text><polygon points="600 360 ,660.0 256.07695154586736 , 720 360" fill="none" stroke="green" transform=""/>
+
+<text x="627.6" y="330.0" font-size="2em">3421</text><polygon points="600 480 ,660.0 376.07695154586736 , 720 480" fill="none" stroke="green" transform=""/>
+
+<text x="627.6" y="450.0" font-size="2em">4321</text></svg>
