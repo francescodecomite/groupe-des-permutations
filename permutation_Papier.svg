@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1280 1280" xmlns="http://www.w3.org/2000/svg">
+<line x1="0" y1="120" x2="3" y2="113" fill="none" stroke="blue"/>
+<line x1="8" y1="106" x2="11" y2="100" fill="none" stroke="blue"/>
+<line x1="16" y1="92" x2="19" y2="86" fill="none" stroke="blue"/>
+<line x1="24" y1="78" x2="27" y2="72" fill="none" stroke="blue"/>
+<line x1="32" y1="64" x2="35" y2="58" fill="none" stroke="blue"/>
+<line x1="40" y1="50" x2="43" y2="44" fill="none" stroke="blue"/>
+<line x1="48" y1="36" x2="51" y2="30" fill="none" stroke="blue"/>
+<line x1="60" y1="16" x2="63" y2="22" fill="none" stroke="blue"/>
+<line x1="68" y1="29" x2="71" y2="35" fill="none" stroke="blue"/>
+<line x1="76" y1="43" x2="79" y2="49" fill="none" stroke="blue"/>
+<line x1="84" y1="57" x2="87" y2="63" fill="none" stroke="blue"/>
+<line x1="92" y1="71" x2="95" y2="77" fill="none" stroke="blue"/>
+<line x1="100" y1="85" x2="103" y2="91" fill="none" stroke="blue"/>
+<line x1="108" y1="99" x2="111" y2="105" fill="none" stroke="blue"/>
+<line x1="0" y1="120" x2="7" y2="120" fill="none" stroke="blue"/>
+<line x1="16" y1="120" x2="23" y2="120" fill="none" stroke="blue"/>
+<line x1="32" y1="120" x2="39" y2="120" fill="none" stroke="blue"/>
+<line x1="48" y1="120" x2="55" y2="120" fill="none" stroke="blue"/>
+<line x1="64" y1="120" x2="71" y2="120" fill="none" stroke="blue"/>
+<line x1="80" y1="120" x2="87" y2="120" fill="none" stroke="blue"/>
+<line x1="96" y1="120" x2="103" y2="120" fill="none" stroke="blue"/>
+<line x1="0" y1="120" x2="-5.490381056766579" y2="99.50961894323342" stroke="green"   transform="" />
+<line x1="60.0" y1="16.076951545867374" x2="39.50961894323342" y2="21.567332602633954" stroke="green"   transform="" />
+<line x1="39.50961894323342" y1="21.567332602633954" x2="-5.490381056766579" y2="99.50961894323342" stroke="green"   transform="" />
+<line x1="120" y1="120" x2="125.49038105676658" y2="99.50961894323342" stroke="green"   transform="" />
+<line x1="80.49038105676658" y1="21.567332602633954" x2="60.0" y2="16.076951545867374" stroke="green"   transform="" />
+<line x1="125.49038105676658" y1="99.50961894323342" x2="80.49038105676658" y2="21.567332602633954" stroke="green"   transform="" />
+<line x1="0" y1="120" x2="5.490381056766579" y2="140.49038105676658" stroke="green"   transform="" />
+<line x1="114.50961894323342" y1="140.49038105676658" x2="5.490381056766579" y2="140.49038105676658" stroke="green"   transform="" />
+<line x1="114.50961894323342" y1="140.49038105676658" x2="120" y2="120" stroke="green"   transform="" />
+</svg>
