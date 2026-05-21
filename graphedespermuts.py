@@ -35,7 +35,7 @@ def voisins(a,b):
         
 
 if __name__=="__main__":
-    n=6
+    n=7
     les_permuts= toutes_permutations(n)
     #print(les_permuts)
     fichier=open("permuts"+str(n)+".dot","w")
