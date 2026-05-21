@@ -45,8 +45,7 @@ def ligne_pointillee(depart,arrivee,couleur="blue"):
     y0=depart[1]
     x1=arrivee[0]
     y1=arrivee[1]
-    decalx=0
-    decaly=0
+    
     if x0>x1:
         tmp=x0
         x0=x1
@@ -69,14 +68,14 @@ def ligne_pointillee(depart,arrivee,couleur="blue"):
     s=""
     for i in range(nb):
         s+="<line x1=\""+str(int(x0+mycos*(i*(la+lb))+decalx))+"\" y1=\""+str(int(y0+mysin*(i*(la+lb))+decaly))+"\" x2=\""+str(int(x0+mycos*(i*(la+lb)+la)+decalx))+"\" y2=\"" +str(int(y0+mysin*(i*(la+lb)+la)+decaly))+"\" fill=\"none\" stroke=\""+couleur+"\"/>\n"
-    return s
+    return "<g>" +s+"</g>"
 
 def trianglePointille(c=TAILLE,couleur="blue"):
     hauteur=c*sqrt(3)/2
     s=ligne_pointillee((0,c),(c/2,c-hauteur),couleur)
     s+=ligne_pointillee((c/2,c-hauteur),(c,c),couleur)
     s+=ligne_pointillee((c,c),(0,c),couleur)
-    return s
+    return "<g>" +s+"</g>"
 
 def texte(chaine,dx,dy):
     
@@ -85,6 +84,9 @@ def texte(chaine,dx,dy):
 def texteInverse(chaine,dx,dy):
     
     return("<text x=\""+str(dx)+"\" y=\""+str(dy)+"\" font-size=\"2em\" text-anchor=\"middle\" transform=\"rotate(180 "+str(dx)+" "+str(dy)+")\">"+chaine+"</text>")
+
+def test(chaine,i,j):
+     return"<text x=\""+str(i)+"\" y=\""+str(j)+"\" dominant-baseline=\"middle\" text-anchor=\"middle\"   font-size=\"1.7em\">"+chaine+"</text>"
     
 
 # Je connaissais pas, c'est Chatgpt qui me l'a dit
@@ -97,52 +99,54 @@ def toutes_permutations(l):
 if __name__=="__main__":
     les_permuts= toutes_permutations([1,2,3,4])
     taille=120
+    epsilon=15
     image=debut()
     decalx=0
     decaly=0
-    """
-    epsilon=5
-    epsy=5
-    
-    for u in range(24):
-         i=u//4
-         j=u%4
-         ax=taille*i
-         ay=taille*j
-         if u%2==0:
-          image.write(equilateral(c=taille,color="\"green\"",dx=ax+i*epsilon,dy=ay/2))
-          image.write("\n")
-          image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.23+i*epsilon,dy=ay/2+taille*0.75))
-          
-         else :
-          image.write("\n")
-          image.write(equilateral_envers(c=taille,color="\"green\"",dx=ax+taille/2+i*epsilon,dy=ay/2-taille/2+epsy))
-          image.write("\n")
-          image.write(texteInverse(les_permuts[6*j+i],dx=taille+ax-taille*0.00+i*epsilon,dy=ay/2-taille+taille*0.79))
-         
-    """
-    # le triangle en pointillé
-    image.write(trianglePointille(taille,"blue"))
-    # les languettes
-    # largeur de la languette
-    a=15
-    c=taille
-    hauteur=c*sqrt(3)/2
-    u=a*sqrt(2)*cos(5*pi/12)
-    v=a*sqrt(2)*sin(5*pi/12)
-    print(v)
-    # Languette à gauche
-    image.write(ligne((0,c),(-u,c-v),"\"green\""))
-    image.write(ligne((c/2,c-hauteur),(c/2-v,c-hauteur+u),"\"green\""))
-    image.write(ligne((c/2-v,c-hauteur+u),(-u,c-v),"\"green\""))
-    # Languette à droite
-    image.write(ligne((c,c),(c+u,c-v),"\"green\""))
-    image.write(ligne((c/2+v,c-hauteur+u),(c/2,c-hauteur),"\"green\""))
-    image.write(ligne((c+u,c-v),(c/2+v,c-hauteur+u),"\"green\""))
-    # Languette du bas
-    image.write(ligne((0,c),(u,c+v),"\"green\""))
-    image.write(ligne((c-u,c+v),(u,c+v),"\"green\""))
-    image.write(ligne((c-u,c+v),(c,c),"\"green\""))
+    for i in range(6):
+        decalx=i*(taille+epsilon)
+        for j in range(4):
+            decaly=j*(taille+epsilon)
+            # regrouper tous les éléments
+            image.write("<g>\n")
+             # le triangle en pointillé
+            image.write(trianglePointille(taille,"blue"))
+           
+            # les languettes
+            # largeur de la languette
+            a=15
+            c=taille
+            hauteur=c*sqrt(3)/2
+            u=a*sqrt(2)*cos(5*pi/12)
+            v=a*sqrt(2)*sin(5*pi/12)
+            # regrouper toutes les languettes
+            image.write("<g>\n")
+            # Languette à gauche
+            image.write("<g>\n")
+            image.write(ligne((0,c),(-u,c-v),"\"green\""))
+            image.write(ligne((c/2,c-hauteur),(c/2-v,c-hauteur+u),"\"green\""))
+            image.write(ligne((c/2-v,c-hauteur+u),(-u,c-v),"\"green\""))
+            image.write("</g>\n")
+            # Languette à droite
+            image.write("<g>\n")
+            image.write(ligne((c,c),(c+u,c-v),"\"green\""))
+            image.write(ligne((c/2+v,c-hauteur+u),(c/2,c-hauteur),"\"green\""))
+            image.write(ligne((c+u,c-v),(c/2+v,c-hauteur+u),"\"green\""))
+            image.write("</g>\n")
+            # Languette du bas
+            image.write("<g>\n")
+            image.write(ligne((0,c),(u,c+v),"\"green\""))
+            image.write(ligne((c-u,c+v),(u,c+v),"\"green\""))
+            image.write(ligne((c-u,c+v),(c,c),"\"green\""))
+            image.write("</g>\n")
+            # fin du regroupement des languettes
+            image.write("</g>\n")
+            
+            # Mettre les  nombres dans  les triangles
+            image.write(test(les_permuts[4*i+j],c/2+decalx,c-hauteur/3+decaly))
+            # Fin du regroupement de tous les éléments
+            image.write("</g>\n")
+
     fin(image)
     
   
