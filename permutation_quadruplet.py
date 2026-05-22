@@ -31,6 +31,11 @@ def equilateral(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
     hauteur=c*sqrt(3)/2
     return "<polygon points=\""+str(dx)+" "+str(c+dy)+" ,"+str(c/2+dx)+" "+str(c-hauteur+dy)+" , "+str(c+dx)+" "+str(c+dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
 
+def triangle(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
+    hauteur=3*c/4
+    return "<polygon points=\""+str(dx)+" "+str(c+dy)+" ,"+str(c/2+dx)+" "+str(c-hauteur+dy)+" , "+str(c+dx)+" "+str(c+dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
+
+
 def texte(chaine,dx,dy):
     
     return("<text x=\""+str(dx)+"\" y=\""+str(dy)+"\" font-size=\"2em\">"+chaine+"</text>")
@@ -45,15 +50,17 @@ def toutes_permutations(l):
 
 if __name__=="__main__":
     les_permuts= toutes_permutations([1,2,3,4])
-    taille=120   
+    taille=120
+    epsilon=2
     image=debut()
     for i in range(6):
         for j in range(4):
          ax=taille*i
          ay=taille*j
-         image.write(equilateral(c=taille,color="\"green\"",dx=ax,dy=ay))
+         image.write(triangle(c=taille,color="\"green\"",dx=ax+i*epsilon,dy=ay))
+         #image.write(equilateral(c=taille,color="\"green\"",dx=ax,dy=ay))
          image.write("\n")
-         image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.23,dy=ay+taille*0.75))
+         image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.23+i*epsilon,dy=ay+taille*0.85))
          
          
     fin(image)
