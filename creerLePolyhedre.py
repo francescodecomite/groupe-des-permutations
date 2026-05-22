@@ -1,20 +1,105 @@
 from math import *
 import re
-#from mathutils import *
-#import bpy
+from mathutils import *
+import bpy
+import bmesh
+from random import *
 # Lire les fichiers off d'un polyèdre, et construire le mesh
 # Ouvrir et lire le fichier
 def lirePolyedre(nom):
     fichier=open(nom,'r')
     return fichier
 
-l=lirePolyedre("tetrakis_hexahedron.off")
-lignes=l.readlines()
-print(lignes[2])
-caracteristiques=list(map(int,re.findall(r'\d+', lignes[2])))
-print(caracteristiques)
-coords=[list(map(int,re.findall(r'\d+', l))) for l in lignes[1,caracteristiques[0]]]
-print(coords)
+
+def makeMaterial(name, diffuse, specular, alpha):
+    mat = bpy.data.materials.new(name)
+    mat.diffuse_color = diffuse
+    #mat.diffuse_shader = 'LAMBERT' 
+    #mat.diffuse_intensity = 0.5
+    mat.specular_color = specular
+    #mat.specular_shader = 'COOKTORR'
+    mat.specular_intensity = 0
+    #mat.mirror_color=(1,1,1)
+    #mat.alpha = alpha
+    #mat.ambient = 0.1
+    #mat.use_cubic=True
+    return mat
+
+
+for material in bpy.data.materials:
+    material.user_clear()
+    bpy.data.materials.remove(material)
+
+NBGRIS=50
+gris=[]
+vr=[0 for i in range(NBGRIS+1)]
+vg=[0 for i in range(NBGRIS+1)]
+vb=[0 for i in range(NBGRIS+1)]
+print("debut")
+
+for i in range(NBGRIS+1):
+    """
+    valueRed=1/(1+exp(-2*(2*(1-(i+0.0)/NBGRIS)-1)))
+    valueGreen=1/(1+exp(-15*(2*(1-(i+0.0)/NBGRIS)-1)))
+    valueBlue=1/(1+exp(-15*(2*(1-(i+0.0)/NBGRIS)-1)))
+    
+    """
+    valueRed=1-(i+0.0)/NBGRIS
+    valueGreen=1-(i+0.0)/NBGRIS
+    valueBlue=1-(i+0.0)/NBGRIS
+    
+    vr[i]=random()
+    vg[i]=random()
+    vb[i]=random()
+    gris.append(makeMaterial('gris'+str(i)+'x',(vr[i],vg[i],vb[i],0),(0,0,0),1)) 
+    
+   
+def tetrakis():
+    # Lire les données du polyhèdre (ici Tetrakis hexaèdre)
+    # et en faire un mesh pour Blender
+    l=lirePolyedre("C:/Users/Francesco/Documents/GitHub/tetrakis_hexahedron.off")
+    me=bpy.data.meshes.new('tetrakis_hexeaedre')
+    lignes=l.readlines()
+    print(lignes[2])
+    caracteristiques=list(map(int,re.findall(r'\d+', lignes[2])))
+    print(caracteristiques)
+    coords=[]
+    for i in range(3,caracteristiques[0]+3): 
+     couper=list(map(float,re.findall(r'[-]*\d*\.\d+', lignes[i])))
+     print(couper)
+     coords.append(couper)
+    print(coords)
+    print("\n")
+    faces=[]
+    for i in range(caracteristiques[0]+3,caracteristiques[0]+3+caracteristiques[1]):
+        faces.append(list(map(int,re.findall(r'\d+', lignes[i])))[1:])
+    print(faces)
+    me.from_pydata(coords,[],faces)  
+    
+    
+    for i in range(NBGRIS+1):
+        maty=bpy.data.materials.get("gris"+str(i)+'x')
+        if(maty==None):
+         me.materials.append(gris[i])  
+        else:
+         me.materials.append(maty)   
+         
+    bm = bmesh.new()
+    bm.from_mesh(me)
+    #bm.normal_update()
+    #bm.faces.ensure_lookup_table() 
+    
+    for f in bm.faces:
+     num=randint(0,20)    
+     maty=me.materials.get('gris'+str(num)+'x')
+     v=list(me.materials)
+     pos=v.index(maty)
+     
+     f.material_index=pos
+    
+
+    bm.to_mesh(me)
+    return me
 """
 #Creation d'un icosaedre avec des aretes de longueur 2
 def icosaedre():
@@ -57,30 +142,14 @@ def icosaedre():
     faces.append([5,3,7])
     me.from_pydata(coords,[],faces)  
     return me
-    
+"""    
 #la scene courante
 scn=bpy.context.scene
 #construire un icosaedre
-myMesh=icosaedre()  
+myMesh=tetrakis()  
 # en faire un objet et le mettre en scene
-ob = bpy.data.objects.new('icoz', myMesh)
+ob = bpy.data.objects.new('tetrakis', myMesh)
 bpy.context.collection.objects.link(ob) 
 #bpy.context.scene.objects.link(ob)  
 #definir les couleurs des faces
-myMesh.vertex_colors.new()
-vertexColor = myMesh.vertex_colors[0].data
-indice=0
-rouge=[1,0,0]
-bleu=[0,0,1]
-vert=[0,1,0]
-jaune=[1,1,0]
-orange=[1,0.55,0]
-valeur=[rouge,bleu,orange,jaune,orange,vert,vert,rouge,bleu,rouge,jaune,vert,
-        bleu,jaune,orange,jaune,orange,bleu,vert,rouge] 
-j=0
-for poly in myMesh.polygons:
-    for idx in poly.loop_indices:
-        vertexColor[indice].color=valeur[j]
-        indice=indice+1
-    j=j+1
-"""
+

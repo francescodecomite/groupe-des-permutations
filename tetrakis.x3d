@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<head>
+		<meta name="filename" content="tetrakis.x3d" />
+		<meta name="generator" content="Blender 2.82 (sub 7)" />
+	</head>
+	<Scene>
+		<NavigationInfo headlight="false"
+		                visibilityLimit="0.0"
+		                type='"EXAMINE", "ANY"'
+		                avatarSize="0.25, 1.75, 0.75"
+		                />
+		<Background DEF="WO_World"
+		            groundColor="0.051 0.051 0.051"
+		            skyColor="0.051 0.051 0.051"
+		            />
+		<Transform DEF="Light_TRANSFORM"
+		           translation="-4.076245 5.903862 1.005454"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="-0.498084 -0.762016 -0.413815 1.513875"
+		           >
+			<PointLight DEF="LA_Light"
+			            ambientIntensity="0.0000"
+			            color="1.0000 1.0000 1.0000"
+			            intensity="1.0000"
+			            radius="30.0000" 
+			            location="-0.0000 -0.0000 0.0000"
+			            />
+		</Transform>
+		<Transform DEF="Camera_TRANSFORM"
+		           translation="-7.358891 4.958309 -6.925791"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="-0.098233 -0.968789 -0.227591 2.349487"
+		           >
+			<Viewpoint DEF="CA_Camera"
+			           centerOfRotation="0 0 0"
+			           position="-0.00 -0.00 0.00"
+			           orientation="-0.00 -0.47 -0.88 0.00"
+			           fieldOfView="0.691"
+			           />
+		</Transform>
+		<Transform DEF="tetrakis_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="tetrakis_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="0.000000 1.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_tetrakis_hexeaedre">
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 0 2 -1 0 3 2 -1 1 4 0 -1 2 5 1 -1 6 3 0 -1 5 2 3 -1 7 4 1 -1 8 0 4 -1 9 1 5 -1 6 10 3 -1 0 8 6 -1 3 11 5 -1 7 8 4 -1 1 9 7 -1 5 12 9 -1 8 10 6 -1 11 3 10 -1 12 5 11 -1 13 8 7 -1 12 7 9 -1 8 13 10 -1 10 12 11 -1 7 12 13 -1 12 10 13 -1 "
+						                >
+							<Coordinate DEF="coords_ME_tetrakis_hexeaedre"
+							            point="0.707107 0.707107 -0.707107 -0.707107 0.707107 -0.707107 0.000000 1.060660 0.000000 0.707107 0.707107 0.707107 -0.000000 -0.000000 -1.060660 -0.707107 0.707107 0.707107 1.060660 0.000000 -0.000000 -0.707107 -0.707107 -0.707107 0.707107 -0.707107 -0.707107 -1.060660 -0.000000 0.000000 0.707107 -0.707107 0.707107 0.000000 0.000000 1.060660 -0.707107 -0.707107 0.707107 0.000000 -1.060660 0.000000 "
+							            />
+							<ColorRGBA color="1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 1.000 " />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="tetrakis_001_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="tetrakis_001_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="0.000000 1.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_tetrakis_hexeaedre_001">
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 0 2 -1 0 3 2 -1 1 4 0 -1 2 5 1 -1 6 3 0 -1 5 2 3 -1 7 4 1 -1 8 0 4 -1 9 1 5 -1 6 10 3 -1 0 8 6 -1 3 11 5 -1 7 8 4 -1 1 9 7 -1 5 12 9 -1 8 10 6 -1 11 3 10 -1 12 5 11 -1 13 8 7 -1 12 7 9 -1 8 13 10 -1 10 12 11 -1 7 12 13 -1 12 10 13 -1 "
+						                >
+							<Coordinate DEF="coords_ME_tetrakis_hexeaedre_001"
+							            point="0.707107 0.707107 -0.707107 -0.707107 0.707107 -0.707107 0.000000 1.060660 0.000000 0.707107 0.707107 0.707107 -0.000000 -0.000000 -1.060660 -0.707107 0.707107 0.707107 1.060660 0.000000 -0.000000 -0.707107 -0.707107 -0.707107 0.707107 -0.707107 -0.707107 -1.060660 -0.000000 0.000000 0.707107 -0.707107 0.707107 0.000000 0.000000 1.060660 -0.707107 -0.707107 0.707107 0.000000 -1.060660 0.000000 "
+							            />
+							<ColorRGBA color="1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 " />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="tetrakis_002_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="tetrakis_002_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="0.000000 1.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_tetrakis_hexeaedre_002">
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 0 2 -1 0 3 2 -1 1 4 0 -1 2 5 1 -1 6 3 0 -1 5 2 3 -1 7 4 1 -1 8 0 4 -1 9 1 5 -1 6 10 3 -1 0 8 6 -1 3 11 5 -1 7 8 4 -1 1 9 7 -1 5 12 9 -1 8 10 6 -1 11 3 10 -1 12 5 11 -1 13 8 7 -1 12 7 9 -1 8 13 10 -1 10 12 11 -1 7 12 13 -1 12 10 13 -1 "
+						                >
+							<Coordinate DEF="coords_ME_tetrakis_hexeaedre_002"
+							            point="0.707107 0.707107 -0.707107 -0.707107 0.707107 -0.707107 0.000000 1.060660 0.000000 0.707107 0.707107 0.707107 -0.000000 -0.000000 -1.060660 -0.707107 0.707107 0.707107 1.060660 0.000000 -0.000000 -0.707107 -0.707107 -0.707107 0.707107 -0.707107 -0.707107 -1.060660 -0.000000 0.000000 0.707107 -0.707107 0.707107 0.000000 0.000000 1.060660 -0.707107 -0.707107 0.707107 0.000000 -1.060660 0.000000 "
+							            />
+							<ColorRGBA color="1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 " />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="tetrakis_003_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="tetrakis_003_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="0.000000 1.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_tetrakis_hexeaedre_004">
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 0 2 -1 0 3 2 -1 1 4 0 -1 2 5 1 -1 6 3 0 -1 5 2 3 -1 7 4 1 -1 8 0 4 -1 9 1 5 -1 6 10 3 -1 0 8 6 -1 3 11 5 -1 7 8 4 -1 1 9 7 -1 5 12 9 -1 8 10 6 -1 11 3 10 -1 12 5 11 -1 13 8 7 -1 12 7 9 -1 8 13 10 -1 10 12 11 -1 7 12 13 -1 12 10 13 -1 "
+						                >
+							<Coordinate DEF="coords_ME_tetrakis_hexeaedre_004"
+							            point="0.707107 0.707107 -0.707107 -0.707107 0.707107 -0.707107 0.000000 1.060660 0.000000 0.707107 0.707107 0.707107 -0.000000 -0.000000 -1.060660 -0.707107 0.707107 0.707107 1.060660 0.000000 -0.000000 -0.707107 -0.707107 -0.707107 0.707107 -0.707107 -0.707107 -1.060660 -0.000000 0.000000 0.707107 -0.707107 0.707107 0.000000 0.000000 1.060660 -0.707107 -0.707107 0.707107 0.000000 -1.060660 0.000000 "
+							            />
+							<ColorRGBA color="1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 1.000 0.000 0.000 0.000 " />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="tetrakis_004_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="tetrakis_004_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="0.000000 1.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_tetrakis_hexeaedre_007">
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 0 2 -1 0 3 2 -1 1 4 0 -1 2 5 1 -1 6 3 0 -1 5 2 3 -1 7 4 1 -1 8 0 4 -1 9 1 5 -1 6 10 3 -1 0 8 6 -1 3 11 5 -1 7 8 4 -1 1 9 7 -1 5 12 9 -1 8 10 6 -1 11 3 10 -1 12 5 11 -1 13 8 7 -1 12 7 9 -1 8 13 10 -1 10 12 11 -1 7 12 13 -1 12 10 13 -1 "
+						                >
+							<Coordinate DEF="coords_ME_tetrakis_hexeaedre_007"
+							            point="0.707107 0.707107 -0.707107 -0.707107 0.707107 -0.707107 0.000000 1.060660 0.000000 0.707107 0.707107 0.707107 -0.000000 -0.000000 -1.060660 -0.707107 0.707107 0.707107 1.060660 0.000000 -0.000000 -0.707107 -0.707107 -0.707107 0.707107 -0.707107 -0.707107 -1.060660 -0.000000 0.000000 0.707107 -0.707107 0.707107 0.000000 0.000000 1.060660 -0.707107 -0.707107 0.707107 0.000000 -1.060660 0.000000 "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="tetrakis_005_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="tetrakis_005_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="0.000000 1.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_tetrakis_hexeaedre_008">
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="7 4 1 -1 8 10 6 -1 10 12 11 -1 "
+						                >
+							<Coordinate DEF="coords_ME_tetrakis_hexeaedre_008"
+							            point="0.707107 0.707107 -0.707107 -0.707107 0.707107 -0.707107 0.000000 1.060660 0.000000 0.707107 0.707107 0.707107 -0.000000 -0.000000 -1.060660 -0.707107 0.707107 0.707107 1.060660 0.000000 -0.000000 -0.707107 -0.707107 -0.707107 0.707107 -0.707107 -0.707107 -1.060660 -0.000000 0.000000 0.707107 -0.707107 0.707107 0.000000 0.000000 1.060660 -0.707107 -0.707107 0.707107 0.000000 -1.060660 0.000000 "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="9 1 5 -1 3 11 5 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="13 8 7 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="7 8 4 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="5 2 3 -1 1 9 7 -1 11 3 10 -1 8 13 10 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 0 2 -1 6 10 3 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 4 0 -1 8 0 4 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="2 5 1 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="0 3 2 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="0 8 6 -1 12 5 11 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="5 12 9 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="6 3 0 -1 12 10 13 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="7 12 13 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="12 7 9 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_008" />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+		<Transform DEF="tetrakis_006_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="tetrakis_006_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="0.000000 1.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_tetrakis_hexeaedre_009">
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris0x"
+							          diffuseColor="0.144 0.853 0.095"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="8 13 10 -1 12 10 13 -1 "
+						                >
+							<Coordinate DEF="coords_ME_tetrakis_hexeaedre_009"
+							            point="0.707107 0.707107 -0.707107 -0.707107 0.707107 -0.707107 0.000000 1.060660 0.000000 0.707107 0.707107 0.707107 -0.000000 -0.000000 -1.060660 -0.707107 0.707107 0.707107 1.060660 0.000000 -0.000000 -0.707107 -0.707107 -0.707107 0.707107 -0.707107 -0.707107 -1.060660 -0.000000 0.000000 0.707107 -0.707107 0.707107 0.000000 0.000000 1.060660 -0.707107 -0.707107 0.707107 0.000000 -1.060660 0.000000 "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris2x"
+							          diffuseColor="0.073 0.202 0.157"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="7 8 4 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris3x"
+							          diffuseColor="0.280 0.426 0.040"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="5 2 3 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris5x"
+							          diffuseColor="0.049 0.203 0.496"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="12 5 11 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris7x"
+							          diffuseColor="0.795 0.698 0.762"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="13 8 7 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris8x"
+							          diffuseColor="0.737 0.520 0.429"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="7 12 13 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris9x"
+							          diffuseColor="0.520 0.751 0.969"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 0 2 -1 5 12 9 -1 8 10 6 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris10x"
+							          diffuseColor="0.186 0.950 0.619"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="1 4 0 -1 7 4 1 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris14x"
+							          diffuseColor="0.482 0.854 0.864"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="11 3 10 -1 12 7 9 -1 10 12 11 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris15x"
+							          diffuseColor="0.483 0.983 0.937"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="0 8 6 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris16x"
+							          diffuseColor="0.921 0.291 0.992"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="2 5 1 -1 6 10 3 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris17x"
+							          diffuseColor="0.944 0.307 0.998"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="0 3 2 -1 8 0 4 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris18x"
+							          diffuseColor="0.117 0.866 0.521"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="9 1 5 -1 1 9 7 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris19x"
+							          diffuseColor="0.828 0.207 0.775"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="3 11 5 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_gris20x"
+							          diffuseColor="0.270 0.417 0.754"
+							          specularColor="0.000 0.000 0.000"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.000"
+							          shininess="0.000"
+							          transparency="1.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="false"
+						                coordIndex="6 3 0 -1 "
+						                >
+							<Coordinate USE="coords_ME_tetrakis_hexeaedre_009" />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+	</Scene>
+</X3D>
