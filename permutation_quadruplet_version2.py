@@ -30,11 +30,11 @@ def ligne(debut,fin,transform="\"\""):
     
 
 def equilateral(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
-    hauteur=c*sqrt(3)/2
+    hauteur=c*3/4
     return "<polygon points=\""+str(dx)+" "+str(c+dy)+" ,"+str(c/2+dx)+" "+str(c-hauteur+dy)+" , "+str(c+dx)+" "+str(c+dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
 
 def equilateral_envers(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
-    hauteur=c*sqrt(3)/2
+    hauteur=c*3/4
     return "<polygon points=\""+str(dx)+" "+str(dy)+" ,"+str(c/2+dx)+" "+str(hauteur+dy)+" , "+str(c+dx)+" "+str(dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
 
 
@@ -69,7 +69,7 @@ if __name__=="__main__":
          if u%2==0:
           image.write(equilateral(c=taille,color="\"green\"",dx=ax+i*epsilon,dy=ay/2))
           image.write("\n")
-          image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.23+i*epsilon,dy=ay/2+taille*0.75))
+          image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.25+i*epsilon,dy=ay/2+taille*0.75))
           
          else :
           image.write("\n")

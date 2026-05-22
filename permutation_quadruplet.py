@@ -32,7 +32,7 @@ def equilateral(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
     return "<polygon points=\""+str(dx)+" "+str(c+dy)+" ,"+str(c/2+dx)+" "+str(c-hauteur+dy)+" , "+str(c+dx)+" "+str(c+dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
 
 def triangle(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
-    hauteur=3*c/4
+    hauteur=c/2*tan(pi/2-asin(2/3))
     return "<polygon points=\""+str(dx)+" "+str(c+dy)+" ,"+str(c/2+dx)+" "+str(c-hauteur+dy)+" , "+str(c+dx)+" "+str(c+dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
 
 
@@ -60,7 +60,7 @@ if __name__=="__main__":
          image.write(triangle(c=taille,color="\"green\"",dx=ax+i*epsilon,dy=ay))
          #image.write(equilateral(c=taille,color="\"green\"",dx=ax,dy=ay))
          image.write("\n")
-         image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.23+i*epsilon,dy=ay+taille*0.85))
+         image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.25+i*epsilon,dy=ay+taille*0.88))
          
          
     fin(image)
