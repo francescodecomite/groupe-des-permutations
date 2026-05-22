@@ -29,12 +29,12 @@ def ligne(debut,fin,transform="\"\""):
      return s
     
 
-def equilateral(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
-    hauteur=c*3/4
+def triangle(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
+    hauteur=c/2*tan(pi/2-asin(2/3))
     return "<polygon points=\""+str(dx)+" "+str(c+dy)+" ,"+str(c/2+dx)+" "+str(c-hauteur+dy)+" , "+str(c+dx)+" "+str(c+dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
 
-def equilateral_envers(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
-    hauteur=c*3/4
+def triangle_envers(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
+    hauteur=c/2*tan(pi/2-asin(2/3))
     return "<polygon points=\""+str(dx)+" "+str(dy)+" ,"+str(c/2+dx)+" "+str(hauteur+dy)+" , "+str(c+dx)+" "+str(dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
 
 
@@ -67,15 +67,15 @@ if __name__=="__main__":
          ax=taille*i
          ay=taille*j
          if u%2==0:
-          image.write(equilateral(c=taille,color="\"green\"",dx=ax+i*epsilon,dy=ay/2))
+          image.write(triangle(c=taille,color="\"green\"",dx=ax+i*epsilon,dy=ay/2))
           image.write("\n")
-          image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.25+i*epsilon,dy=ay/2+taille*0.75))
+          image.write(texte(les_permuts[6*j+i],dx=ax+taille*0.25+i*epsilon,dy=ay/2+taille*0.87))
           
          else :
           image.write("\n")
-          image.write(equilateral_envers(c=taille,color="\"green\"",dx=ax+taille/2+i*epsilon,dy=ay/2-taille/2+epsy))
+          image.write(triangle_envers(c=taille,color="\"green\"",dx=ax+taille/2+i*epsilon,dy=ay/2-taille/2+epsy))
           image.write("\n")
-          image.write(texteInverse(les_permuts[6*j+i],dx=taille+ax-taille*0.00+i*epsilon,dy=ay/2-taille+taille*0.79))
+          image.write(texteInverse(les_permuts[6*j+i],dx=taille+ax-taille*0.00+i*epsilon,dy=ay/2-taille+taille*0.67))
          
          
     fin(image)

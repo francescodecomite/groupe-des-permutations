@@ -28,7 +28,11 @@ def fin(image):
 def ligne(debut,fin,color="\"red\"",transform="\"\""):
      s="<line x1=\""+str(debut[0]+decalx)+"\" y1=\""+str(debut[1]+decaly)+"\" x2=\""+str(fin[0]+decalx)+"\" y2=\""+str(fin[1]+decaly)+"\" stroke="+color+"   transform="+transform+" />\n"
      return s
-    
+
+def triangle(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
+    hauteur=c/2*tan(pi/2-asin(2/3))
+    return "<polygon points=\""+str(dx)+" "+str(c+dy)+" ,"+str(c/2+dx)+" "+str(c-hauteur+dy)+" , "+str(c+dx)+" "+str(c+dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
+
 
 def equilateral(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
     hauteur=c*sqrt(3)/2
@@ -76,7 +80,7 @@ def ligne_pointillee(depart,arrivee,couleur="blue"):
     return "<g>" +s+"</g>"
 
 def trianglePointille(c=TAILLE,couleur="blue"):
-    hauteur=c*sqrt(3)/2
+    hauteur=c/2*tan(pi/2-asin(2/3))
     s=ligne_pointillee((0,c),(c/2,c-hauteur),couleur)
     s+=ligne_pointillee((c/2,c-hauteur),(c,c),couleur)
     s+=ligne_pointillee((c,c),(0,c),couleur)
@@ -84,7 +88,7 @@ def trianglePointille(c=TAILLE,couleur="blue"):
 
 def trianglePointilleV2(c=TAILLE,couleur="blue"):
     # Avec la bonne forme pour les triangles
-    hauteur=c*3/4
+    hauteur=c/2*tan(pi/2-asin(2/3))
     s=ligne_pointillee((0,c),(c/2,c-hauteur),couleur)
     s+=ligne_pointillee((c/2,c-hauteur),(c,c),couleur)
     s+=ligne_pointillee((c,c),(0,c),couleur)
@@ -129,9 +133,10 @@ if __name__=="__main__":
             # largeur de la languette
             a=15
             c=taille
-            hauteur=c*3/4
-            u=a*sqrt(2)*cos(5*pi/12)
-            v=a*sqrt(2)*sin(5*pi/12)
+            hauteur=c/2*tan(pi/2-asin(2/3))
+            alpha=pi/4+pi/2-asin(2/3)
+            u=a*sqrt(2)*cos(alpha)
+            v=a*sqrt(2)*sin(alpha)
             # regrouper toutes les languettes
             image.write("<g>\n")
             # Languette à gauche
@@ -148,9 +153,9 @@ if __name__=="__main__":
             image.write("</g>\n")
             # Languette du bas
             image.write("<g>\n")
-            image.write(ligne((0,c),(u,c+v),"\"green\""))
-            image.write(ligne((c-u,c+v),(u,c+v),"\"green\""))
-            image.write(ligne((c-u,c+v),(c,c),"\"green\""))
+            image.write(ligne((0,c),(a,c+a),"\"green\""))
+            image.write(ligne((c-a,c+a),(a,c+a),"\"green\""))
+            image.write(ligne((c-a,c+a),(c,c),"\"green\""))
             image.write("</g>\n")
             # fin du regroupement des languettes
             image.write("</g>\n")
