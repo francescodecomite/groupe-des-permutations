@@ -38,6 +38,11 @@ def equilateral_envers(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
     hauteur=c*sqrt(3)/2
     return "<polygon points=\""+str(dx)+" "+str(dy)+" ,"+str(c/2+dx)+" "+str(hauteur+dy)+" , "+str(c+dx)+" "+str(dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
 
+def triangle(c=TAILLE,dx=0,dy=0,color="\"red\"", transform="\"\""):
+    hauteur=3*c/4
+    return "<polygon points=\""+str(dx)+" "+str(c+dy)+" ,"+str(c/2+dx)+" "+str(c-hauteur+dy)+" , "+str(c+dx)+" "+str(c+dy)+"\" fill=\"none\" stroke="+color+" transform="+transform+"/>\n"
+
+
 # Une ligne pointillée (pour que la découpeuse laser fasse des vrais pointillés)
 # on devrait décaler la ligne pour que ça soit pareil aux deux extremités...
 def ligne_pointillee(depart,arrivee,couleur="blue"):
@@ -77,6 +82,14 @@ def trianglePointille(c=TAILLE,couleur="blue"):
     s+=ligne_pointillee((c,c),(0,c),couleur)
     return "<g>" +s+"</g>"
 
+def trianglePointilleV2(c=TAILLE,couleur="blue"):
+    # Avec la bonne forme pour les triangles
+    hauteur=c*3/4
+    s=ligne_pointillee((0,c),(c/2,c-hauteur),couleur)
+    s+=ligne_pointillee((c/2,c-hauteur),(c,c),couleur)
+    s+=ligne_pointillee((c,c),(0,c),couleur)
+    return "<g>" +s+"</g>"
+
 def texte(chaine,dx,dy):
     
     return("<text x=\""+str(dx)+"\" y=\""+str(dy)+"\" font-size=\"2em\">"+chaine+"</text>")
@@ -110,13 +123,13 @@ if __name__=="__main__":
             # regrouper tous les éléments
             image.write("<g>\n")
              # le triangle en pointillé
-            image.write(trianglePointille(taille,"blue"))
+            image.write(trianglePointilleV2(taille,"blue"))
            
             # les languettes
             # largeur de la languette
             a=15
             c=taille
-            hauteur=c*sqrt(3)/2
+            hauteur=c*3/4
             u=a*sqrt(2)*cos(5*pi/12)
             v=a*sqrt(2)*sin(5*pi/12)
             # regrouper toutes les languettes
