@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="2000" height="3600" viewBox="0 0 2000 3600">
+<defs>
+</defs>
+<g transform="translate(100,50)">
+<g transform="translate(0,0)">
+<g transform="rotate(0.0 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">abcd</text>
+</g>
+<g transform="rotate(83.62062979155719 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">bacd</text>
+</g>
+<g transform="rotate(167.24125958311438 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">badc</text>
+</g>
+<g transform="rotate(250.8618893746716 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">abdc</text>
+</g>
+</g>
+<g transform="translate(600,0)">
+<g transform="rotate(0.0 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">acbd</text>
+</g>
+<g transform="rotate(83.62062979155719 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">acdb</text>
+</g>
+<g transform="rotate(167.24125958311438 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">cadb</text>
+</g>
+<g transform="rotate(250.8618893746716 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">cabd</text>
+</g>
+</g>
+<g transform="translate(0,600)">
+<g transform="rotate(0.0 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">bcad</text>
+</g>
+<g transform="rotate(83.62062979155719 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">cbad</text>
+</g>
+<g transform="rotate(167.24125958311438 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">cbda</text>
+</g>
+<g transform="rotate(250.8618893746716 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">bcda</text>
+</g>
+</g>
+<g transform="translate(600,600)">
+<g transform="rotate(0.0 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">bdac</text>
+</g>
+<g transform="rotate(83.62062979155719 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">bdca</text>
+</g>
+<g transform="rotate(167.24125958311438 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">dbca</text>
+</g>
+<g transform="rotate(250.8618893746716 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">dbac</text>
+</g>
+</g>
+<g transform="translate(0,1200)">
+<g transform="rotate(0.0 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">adbc</text>
+</g>
+<g transform="rotate(83.62062979155719 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">dabc</text>
+</g>
+<g transform="rotate(167.24125958311438 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">dacb</text>
+</g>
+<g transform="rotate(250.8618893746716 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">adcb</text>
+</g>
+</g>
+<g transform="translate(600,1200)">
+<g transform="rotate(0.0 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">cdab</text>
+</g>
+<g transform="rotate(83.62062979155719 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">dcab</text>
+</g>
+<g transform="rotate(167.24125958311438 200 223.60679774997897)">
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">dcba</text>
+</g>
+<g transform="rotate(250.8618893746716 200 223.60679774997897)">
+<path d="M400,0 L376.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightblue" />
+<path d="M0,0 L24.0,10.062305898749052 L376.0,10.062305898749052 L400,0 Z" stroke="none" fill="orange" />
+<path d="M0,0 L24.0,10.062305898749052 L200,206.83628791873053 L200,223.60679774997897 Z" stroke="none" fill="lightgreen" />
+<path d="M0,0 L400,0 L200,223.60679774997897 Z" style="
+    stroke : black;
+    stroke-width : 1pt;
+    fill : none;
+" />
+<text x="200" y="51.42956348249516" font-size="0" text-anchor="middle" style="
+    font-family: monospace;
+    font-weight : bold;
+    font-size  : 25pt;
+    fill : darkblue;
+" transform="rotate(180 200 55.90169943749474)">cdba</text>
+</g>
+</g>
+</g>
+</svg>
