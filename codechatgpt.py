@@ -25,8 +25,8 @@ def frame(A, B, C):
 Q  = frame(A,  B,  C)
 Qp = frame(Aprime, Bprime, Cprime)
 
-R = Qp @ Q.T
-t = Aprime - R @ A
+R = np.mul(Qp,Q.T)
+t = Aprime - np.mul(R,A)
 print(t)
 
 

@@ -80,9 +80,11 @@ Qprime=column_stack([e1prime,e2prime,e3prime])
 print(Qprime)
 
 
-resu=Qprime@Q.T
+resu=matmul(Qprime,Q.T)
+r2=Qprime@Q.T
 
 print(resu)
+print(r2)
 
 #La translation
 t=Aprime-resu@A
