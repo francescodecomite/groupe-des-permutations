@@ -46,26 +46,45 @@ if __name__=="__main__":
     u,v=lirePolyedre()
     print(u)
     print("\n")
-    triangle1=v[5]
-    for triangle1 in v: 
-        print(triangle1)
-        p1=u[triangle1[0]]
-        p2=u[triangle1[1]]
-        p3=u[triangle1[2]]
+    
+    for triangle in v: 
+        print("1 \t\t",triangle)
+        p1=u[triangle[0]]
+        p2=u[triangle[1]]
+        p3=u[triangle[2]]
 
-        print(distance(p1,p2))
-        print(distance(p1,p3))
-        print(distance(p3,p2))
+        d0=distance(p1,p2)
+        d1=distance(p1,p3)
+        d2=distance(p3,p2)
+
+        print(d0)
+        print(d1)
+        print(d2)
         # Une seule distance vaut sqrt(2), c'est la distance entre les deux points
         # de la base du triangle isocele
         # On va inverser l'ordre des points pour toujours parler du même
         # triangle
         # Mais ça marche pas, le triangle pourrait être à l'envers.
         # Putain le bordel. Sens de rotation du parcours des points.
-        # Si il n'y a pas de dinstinction entre les faces , c'est pas grave
+        # Si il n'y a pas de distinction entre les faces , c'est pas grave
         # Quid des triangles non isocèles, et des polygones
-        # non triangulaires ? 
+        # non triangulaires ?
+        # Pour le moment, on ne s'occupe que des isoceles du tetrakis hexaèdre
 
+        
+
+        if d1>d0:
+            temp=triangle[2]
+            triangle[2]=triangle[1]
+            triangle[1]=triangle[0]
+            triangle[0]=temp
+            print("2 \t\t ",triangle)
+        elif d2>d0 :
+            temp=triangle[0]
+            triangle[0]=triangle[1]
+            triangle[1]=triangle[2]
+            triangle[2]=temp
+            print("3 \t\t ",triangle)
        
 
     
