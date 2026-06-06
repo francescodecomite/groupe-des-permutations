@@ -6,7 +6,7 @@ import numpy as np
 import sys
 import re
 from math import *
-
+from array import *
 
 def lirePolyedre(poly="tetrakis_hexahedron"):
     # Lire les données du polyhèdre (ici Tetrakis hexaèdre)
@@ -36,11 +36,40 @@ def lirePolyedre(poly="tetrakis_hexahedron"):
     
     return coords,faces
 
+
+def frame(A, B, C):
+    e1 = B - A
+    e1 = e1 / np.linalg.norm(e1)
+
+    v = C - A
+    v = v - np.dot(v, e1) * e1
+    e2 = v / np.linalg.norm(v)
+
+    e3 = np.cross(e1, e2)
+
+    return np.column_stack((e1, e2, e3))
+
+
+# le triangle de base dans le plan x0z (y=0)
+auxi=sqrt(10)/4
+A=np.array((-sqrt(2)/2,0,-auxi/3))
+B=np.array((sqrt(2)/2,0,-auxi/3))
+C=np.array((0,0,2*auxi/3))
+
+Q  = frame(A,B,C)
+print("Q")
+print(Q)
+
+
 def distance(p1,p2):
     sum=0
     for i in range(3):
         sum+=(p1[i]-p2[i])*(p1[i]-p2[i])
     return sqrt(sum)
+
+print(distance(A,B))
+print(distance(C,B))
+print(distance(A,C))
 
 if __name__=="__main__":
     u,v=lirePolyedre()
@@ -48,7 +77,7 @@ if __name__=="__main__":
     print("\n")
     
     for triangle in v: 
-        print("1 \t\t",triangle)
+        #print("1 \t\t",triangle)
         p1=u[triangle[0]]
         p2=u[triangle[1]]
         p3=u[triangle[2]]
@@ -57,9 +86,9 @@ if __name__=="__main__":
         d1=distance(p1,p3)
         d2=distance(p3,p2)
 
-        print(d0)
-        print(d1)
-        print(d2)
+        #print(d0)
+        #print(d1)
+        #print(d2)
         # Une seule distance vaut sqrt(2), c'est la distance entre les deux points
         # de la base du triangle isocele
         # On va inverser l'ordre des points pour toujours parler du même
@@ -78,14 +107,34 @@ if __name__=="__main__":
             triangle[2]=triangle[1]
             triangle[1]=triangle[0]
             triangle[0]=temp
-            print("2 \t\t ",triangle)
+            #print("2 \t\t ",triangle)
         elif d2>d0 :
             temp=triangle[0]
             triangle[0]=triangle[1]
             triangle[1]=triangle[2]
             triangle[2]=temp
-            print("3 \t\t ",triangle)
+            #print("3 \t\t ",triangle)
        
+        Aprime=np.array(u[triangle[0]])
+        Bprime=np.array(u[triangle[1]])
+        Cprime=np.array(u[triangle[2]])
+        Qp = frame(Aprime, Bprime, Cprime)
+
+        R = np.matmul(Qp,Q.T)
+        t = Aprime - np.matmul(R,A)
+        print("t \t",t)
+        print("Q \t ",Q)
+        print("R \n ",R)
+        print(np.linalg.det(R))
+        print(np.linalg.norm(R.T @ R - np.eye(3)))
+
+        # Code Chatgpt
+        M = np.eye(4)
+        M[:3, :3] = R  # Insère R dans les 3 premières lignes et 3 premières colonnes
+        M[:3, 3] = t   # Insère T dans la 4ème colonne
+        # Fin du code chatgpt
+        print("M")
+        print(M)
 
     
 
@@ -118,17 +167,7 @@ Bprime = np.array([2.616032225531291, -1.142877991230654, 2.910722130148995])
 Cprime = np.array([0.944699164644112, -0.003743029127177, 2.625592486757558])
 
 
-def frame(A, B, C):
-    e1 = B - A
-    e1 = e1 / np.linalg.norm(e1)
 
-    v = C - A
-    v = v - np.dot(v, e1) * e1
-    e2 = v / np.linalg.norm(v)
-
-    e3 = np.cross(e1, e2)
-
-    return np.column_stack((e1, e2, e3))
 
 Q  = frame(A,  B,  C)
 Qp = frame(Aprime, Bprime, Cprime)
