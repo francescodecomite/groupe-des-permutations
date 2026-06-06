@@ -3,6 +3,92 @@
 # On va sauver les 16 valeurs dans un fichier.
 
 import numpy as np
+import sys
+import re
+from math import *
+
+
+def lirePolyedre(poly="tetrakis_hexahedron"):
+    # Lire les données du polyhèdre (ici Tetrakis hexaèdre)
+    # et en extraire les triangles pour plus tard connaître la transformation
+    # qui les engendre
+    l=open("C:/Users/Francesco/Documents/GitHub/"+poly+".off",'r')
+    
+    lignes=l.readlines()
+    print(lignes[2])
+    caracteristiques=list(map(int,re.findall(r'\d+', lignes[2])))
+    print(caracteristiques)
+    coords=[]
+    for i in range(3,caracteristiques[0]+3): 
+     couper=list(map(float,re.findall(r'[-]*\d*\.\d+', lignes[i])))
+     coords.append(couper)
+    print(coords)
+    print("\n")
+
+    # coords est une liste qui contient tous les sommets du polyèdre.
+    # l'ordre est utilisé par la liste des faces pour associer trois sommets à chaque face
+    
+    faces=[]
+    for i in range(caracteristiques[0]+3,caracteristiques[0]+3+caracteristiques[1]):
+        faces.append(list(map(int,re.findall(r'\d+', lignes[i])))[1:])
+    print(faces)
+    #faces contient toutes les faces
+    
+    return coords,faces
+
+def distance(p1,p2):
+    sum=0
+    for i in range(3):
+        sum+=(p1[i]-p2[i])*(p1[i]-p2[i])
+    return sqrt(sum)
+
+if __name__=="__main__":
+    u,v=lirePolyedre()
+    print(u)
+    print("\n")
+    triangle1=v[5]
+    for triangle1 in v: 
+        print(triangle1)
+        p1=u[triangle1[0]]
+        p2=u[triangle1[1]]
+        p3=u[triangle1[2]]
+
+        print(distance(p1,p2))
+        print(distance(p1,p3))
+        print(distance(p3,p2))
+        # Une seule distance vaut sqrt(2), c'est la distance entre les deux points
+        # de la base du triangle isocele
+        # On va inverser l'ordre des points pour toujours parler du même
+        # triangle
+        # Mais ça marche pas, le triangle pourrait être à l'envers.
+        # Putain le bordel. Sens de rotation du parcours des points.
+        # Si il n'y a pas de dinstinction entre les faces , c'est pas grave
+        # Quid des triangles non isocèles, et des polygones
+        # non triangulaires ? 
+
+       
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sys.exit(0)
 
 A=np.array((-0.7,0.7,-0.7))
 B=np.array((0.7,-0.7,0.7))
@@ -28,8 +114,8 @@ def frame(A, B, C):
 Q  = frame(A,  B,  C)
 Qp = frame(Aprime, Bprime, Cprime)
 
-R = np.mul(Qp,Q.T)
-t = Aprime - np.mul(R,A)
+R = np.matmul(Qp,Q.T)
+t = Aprime - np.matmul(R,A)
 print(t)
 
 
